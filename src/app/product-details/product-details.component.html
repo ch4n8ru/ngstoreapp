@@ -1,0 +1,9 @@
+<h3>Product Details</h3>
+<div *ngIf="product">
+  <h2>{{product.name}}</h2>
+  <p *ngIf="product.description">
+    {{product.description}}
+  </p>
+  <p>{{product.price | currency}}</p>
+  <button (click) = "addToCart()"> Buy</button>
+</div>
